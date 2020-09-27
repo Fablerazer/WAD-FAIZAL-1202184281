@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+    <script type="text/javascript" src="bootstrap/js/jquery.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+    <title>Home</title>
+</head>
+<body class="bg-white">
+
+    <!-- Navbar Division from Bootstrap  -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <img src="img/logo-ead.png" style="width: 150px;">
+        </a>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link active" href="home.html">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="profile.html">Profile</a>
+                <a class="nav-link" href="product.html">Products</a>
+            </div>
+            
+        </div>
+    </nav>
+    <!-- End of Navbar Section -->
+
+    <!-- Content Division -->
+    <div class="container mt-4 mx-auto px-5">
+        <div class="row mx-auto px-5">
+
+            <!-- Video Section -->
+            <div class="col-lg video" style="background-color: #ebeced;align-items: center; padding-top: 117px;">
+                <iframe width="425" height="260" src="http://bit.ly/VideoEAD2020" allowfullscreen></iframe>
+            </div>
+            <!-- End of Video -->
+
+            <!-- Registry Section -->
+            <div class="col-lg px-5 bg-white">
+                <form>
+
+                    <!-- Row 1 (Judul Registrasi) -->
+                    <div class="row mt-5">
+                        <div class="col" style="font-size: 20px;text-align: center;font-weight: bold;">
+                            <p>Registrasi Data Pelanggan</p>
+                        </div>
+                    </div>
+                    <!-- End of Row 1 -->
+
+                    <!-- Row 2 (Nama) -->
+                    <div class="row px-4 mb-4">
+                        <div class="col">
+                            <label>Nama</label>
+                        </div>
+                        <div class="col">
+                            <input type="text" id="name" name="name" placeholder="Nama anda...">
+                        </div>
+                    </div>
+                    <!-- End of Row 2 -->
+
+                    <!-- Row 3 (Nomor HP) -->
+                    <div class="row px-4 mb-4">
+                        <div class="col">
+                            <label>NomorHP</label>
+                        </div>
+                        <div class="col">
+                            <input type="text" name="phone" id="phone">
+                        </div>
+                    </div>
+                    <!-- End of Row 3 -->
+
+                    <!-- Row 4 (Alamat) -->
+                    <div class="row px-4 mb-4">
+                        <div class="col">
+                            <label>Alamat</label>
+                        </div>
+                        <div class="col">
+                            <textarea id="alamat" name="alamat" style="width: 182px;"></textarea>
+                        </div>
+                    </div>
+                    <!-- End of Row 4 -->
+
+                    <!-- Row 5 (Pembayaran) -->
+                    <div class="row px-4 mb-4">
+                        <div class="col">
+                            <label>Pembayaran</label>
+                        </div>
+                        <div class="col" style="margin-right: 22px;">
+                            <div class="row">
+                                <div class="radio" style="margin-right: 12px;">
+                                    <label><input type="radio" name="optradio"> Cash</label>
+                                </div>
+                                <div class="radio">
+                                    <label><input type="radio" name="optradio"> Credit</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of Row 5 -->
+
+                    <!-- Row 6 (Kategori Pesanan) -->
+                    <div class="row px-4 mb-4">
+                        <div class="col">
+                            <label>Kategori Pesanan</label>
+                        </div>
+                        <div class="col">
+                            <select id="pesanan" style="width: 182px;">
+                                <option value="komputer">Keyboard</option>
+                                <option value="keyboard">Komputer</option>
+                                <option value="mouse">Mouse</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- End of Row 6 -->
+
+                    <!-- Row 7 (Button Kirim) -->
+                    <div class="row px-4 mb-5">
+                        <div class="col">
+                            <button type="button" class="btn btn-primary w-100">Kirim</button>
+                        </div>
+                    </div>
+                    <!-- End of Row 7 -->
+
+                </form>
+            </div>
+            <!-- End of Regis -->
+        </div>
+    </div>
+    <!-- End of Content -->
+
+</body>
+</html>
