@@ -96,7 +96,7 @@ if (isset($_POST['phone'])) {
 
   
 </nav>
-<php 
+<?php 
     $id=rand();
     $nama=$_POST['nama'];
     $date=date_create($_POST['date']);
@@ -118,7 +118,7 @@ if (isset($_POST['phone'])) {
     }
 
     //Calculation Formula for Services
-    if(isset($_POST['services'])){
+    if(isset($_POST['service'])){
         $services=$_POST['service'];
         foreach($services as $cost){
             $service = $service.'<li>'.$cost. '</li>';
