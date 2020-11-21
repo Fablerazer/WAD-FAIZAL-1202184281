@@ -8,9 +8,7 @@
     <title>Buat Event</title>
 </head>
 <body>
-
-    <!-- Navbar Section -->
-
+    <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <a class="navbar-brand" href="#">EAD EVENTS</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,11 +27,9 @@
             </ul>
         </div>
     </nav>
+    <!--  Navbar -->
 
-    <!-- End of Navbar Section -->
-
-    <!-- Content Section -->
-
+    <!-- content -->
     <div class="container-fluid mt-3 px-5">
         <p class="text-primary px-2" style="font-size: 24px;">Buat Event
         <div class="row mx-auto" style="text-align: center;">
@@ -44,13 +40,12 @@
                 <br>
             </div>
         </div>
-
         <form action="create.php" method="post" enctype="multipart/form-data">
             <div class="row mx-auto">
                 <div class="col-sm bg-light rounded-bottom mr-2">
                     <div class="form-group">
                         <label for="name"><b>Name</b></label>
-                        <input type="text" class="form-control" style="background-color:#e8f0fe;" name="nama">
+                        <input type="text" class="form-control" style="background-color:#e8f0fe;" name="nama" >
                     </div>
                     <div class="form-group">
                         <label for="deskripsi"><b>Deskripsi</b></label>
@@ -73,6 +68,7 @@
                                 </div>
                             </div>
                     </div>
+                    
                 </div>
 
                 <div class="col-sm bg-light rounded-bottom">
@@ -80,7 +76,6 @@
                         <label for="tanggal"><b>Tanggal</b></label>
                         <input type="date" class="form-control" name="tanggal">
                     </div>
-
                     <div class="row mb-3">
                         <div class="col">
                         <label for="mulai"><b>Jam Mulai</b></label>
@@ -91,17 +86,14 @@
                         <input type="time" class="form-control" name="berakhir">
                         </div>
                     </div>
-
                     <div class="form-group">
                         <label for="name"><b>Tempat</b></label>
                         <input type="text" class="form-control" style="background-color:#e8f0fe;" name="tempat">
                     </div>
-
                     <div class="form-group">
                         <label for="name"><b>Harga</b></label>
                         <input type="number" class="form-control"  name="harga">
                     </div>
-
                     <div class="form-group">
                         <label for="kategori"><b>Benefit</b></label>
                             <div class="form-group">
@@ -119,18 +111,14 @@
                                 </div>
                             </div>
                     </div>
-
                     <div align="right">
                         <button type="submit" class="btn btn-primary" name="submit">Submit</button>
                         <button type="submit" class="btn btn-danger">Cancel</button>
                     </div>
-
                 </div>
             </div>
         </form>
     </div>
-
-    <!-- End of Content Section -->
-    
+    <!-- content -->
 </body>
 </html>

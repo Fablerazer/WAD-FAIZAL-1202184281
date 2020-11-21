@@ -2,26 +2,22 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <title>Home</title>
 
-    <!-- Connect to database -->
-
+    <!-- koneksi database -->
     <?php
         include ('config.php');
         $query = "SELECT * FROM event_table";
         $select = mysqli_query($conn, $query);
     ?>
-
-    <!-- End of Connect to database -->
-
+    <!--koneksi database -->
     </head>
 <body>
-    <!-- Navbar Section -->
-
+    <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <a class="navbar-brand" href="#">EAD EVENTS</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,11 +36,9 @@
             </ul>
         </div>
     </nav>
+    <!-- end Navbar -->
 
-    <!-- End of Navbar Section -->
-
-    <!-- Content Section -->
-
+    <!-- content -->
     <div class="container mt-3">
         <h3 class="text-primary" style="text-align: center;">WELCOME TO EAD EVENTS!<h3>
         <?php
@@ -83,8 +77,6 @@
                     <?php } ?>
                 <?php } ?>
     </div>
-
-    <!-- End of Content Section -->
-    
+    <!-- end of content -->
 </body>
 </html>

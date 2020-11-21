@@ -98,7 +98,8 @@
                 }
                     if (!empty($menu)) {
                 echo '<input type="text" class="form-control" id="StandardRoom" name="room" readonly value='.$menu.'>';
-                }else {
+                }
+                else {
                 echo '<select id="disabledSelect" class="form-control" name="room">';
                 echo '<option value="Standard" selected>Standard</option>';
                 echo '<option value="Superior">Superior</option>'; 

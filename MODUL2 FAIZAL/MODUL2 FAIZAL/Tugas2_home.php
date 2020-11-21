@@ -75,7 +75,7 @@
           <div class="card-footer text-muted">
           <form action="Tugas2_booking.php" method="POST">
             <input type="hidden" name="img" value="https://blogpictures.99.co/lottehotel.jpg">
-            <small class="text-muted"><button type="sumbit" value="Standard" name="menu" class="card-link btn btn-primary text-center">Book Now</button></small>
+            <small class="text-muted"><button type="submit" value="Standard" name="menu" class="card-link btn btn-primary text-center">Book Now</button></small>
           </form>
           </div>
         </div>
