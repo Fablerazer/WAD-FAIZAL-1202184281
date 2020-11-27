@@ -3,7 +3,7 @@
 $dbhost = "localhost";
 $dbuser = "root";
 $dbpass = "";
-$dbname = "wad_modul4";
+$dbname = "wad_modul4_faizal";
 $conn = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
 
 class database{
@@ -18,12 +18,12 @@ class database{
     }
 
     function register($nama, $email, $no_hp, $password){
-        $insert = mysqli_query($this->koneksi,"INSERT INTO user VALUES ('','$nama','$email','$no_hp','$password')");
+        $insert = mysqli_query($this->koneksi,"INSERT INTO user VALUES ('$nama','$email','$no_hp','$password')");
         return $insert;
     }
 
     function login($email, $password, $remember){
-        $query = mysqli_query($this->koneksi, "SELECT * FROM user WHERE email='$email'");
+        $query = mysqli_query($this->koneksi, "SELECT * FROM users WHERE email='$email'");
         $data_user = $query->fetch_array();
         if (password_verify($password,$data_user['password'])) {
             if ($remember) {
